@@ -1,3 +1,6 @@
+
+pipeline {
+    agent any
         stage('DeployToStaging') {
             when {
                 branch 'master'
@@ -28,3 +31,4 @@
                 }
             }
         }
+}
